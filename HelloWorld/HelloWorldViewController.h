@@ -10,4 +10,18 @@
 
 @interface HelloWorldViewController : UIViewController
 
+
+{
+    IBOutlet UILabel *scorelabel;
+    IBOutlet UILabel *timerlabel;
+    
+    NSInteger count;
+    NSInteger seconds;
+    NSTimer *timer;
+}
+
+-(IBAction)showMessage;
+
+-(IBAction)buttonPressed;
+
 @end
